@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: liferay-config
+  namespace: liferay-app
+data:
+  portal-ext.properties: |
+    jdbc.default.driverClassName=com.mysql.cj.jdbc.Driver
+    jdbc.default.url=jdbc:mysql://mysql.liferay-app.svc.cluster.local:3306/liferay?useUnicode=true&characterEncoding=UTF-8&useFastDateParsing=false    
+    jdbc.default.username=liferay
+    jdbc.default.password=liferay
+    virtual.hosts.valid.hosts=localhost,127.0.0.1, 192.168.1.171, liferay-kubernetes
+    web.server.protocol=https
+    web.server.https.port=443

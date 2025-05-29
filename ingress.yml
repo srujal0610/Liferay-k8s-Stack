@@ -1,0 +1,24 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: liferay-ingress
+  namespace: liferay-app
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  tls:
+  - secretName: liferay-tls
+    hosts:
+    - liferay-kubernetes
+  ingressClassName: nginx
+  rules:
+  - host: liferay-kubernetes
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: liferay
+            port:
+              number: 80

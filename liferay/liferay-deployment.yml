@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: liferay
+  namespace: liferay-app
+spec:
+  selector:
+    matchLabels:
+      app: liferay
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: liferay
+    spec:
+      containers:
+      - name: liferay
+        image: liferay/portal:7.4.3.23-ga23
+        ports:
+        - containerPort: 8080
+        volumeMounts:
+          - name: config-volume
+            mountPath: /opt/liferay/portal-ext.properties
+            subPath: portal-ext.properties
+        # env:
+        # - name: LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_DRIVER_CLASS_NAME
+        #   value: com.mysql.cj.jdbc.Driver
+        # - name: LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_URL
+        #   value: jdbc:mysql://mysql:3306/liferay?useUnicode=true&characterEncoding=UTF-8&useFastDateParsing=false
+        # - name: LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_USERNAME
+        #   value: liferayuser
+        # - name: LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_PASSWORD
+        #   value: liferaypass
+      volumes:  
+        - name: config-volume
+          configMap:
+            name: liferay-config
+
