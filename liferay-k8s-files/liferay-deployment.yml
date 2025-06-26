@@ -1,0 +1,87 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: liferay
+  namespace: liferay-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: liferay
+  template:
+    metadata:
+      labels:
+        app: liferay
+    spec:
+      initContainers:
+        - name: init-copy-tomcat-config
+          image: busybox
+          command: ["/bin/sh", "-c"]
+          args:
+            - |
+              mkdir -p /config/bin && mkdir -p /config/conf && \
+              cp /mnt/bin/setenv.sh /config/bin/setenv.sh && \
+              cp /mnt/conf/server.xml /config/conf/server.xml && \
+              chmod +x /config/bin/setenv.sh
+          volumeMounts:
+            - name: local-tomcat-volume
+              mountPath: /mnt
+            - name: tomcat-config-volume
+              mountPath: /config
+      containers:
+        - name: liferay
+          image: liferay/portal:7.4.3.23-ga23
+          ports:
+            - containerPort: 8080
+          volumeMounts:
+            - name: config-volume
+              mountPath: /opt/liferay/portal-ext.properties
+              subPath: portal-ext.properties
+            - name: tomcat-config-volume
+              mountPath: /opt/liferay/tomcat/bin/setenv.sh
+              subPath: bin/setenv.sh
+            - name: tomcat-config-volume
+              mountPath: /opt/liferay/tomcat/conf/server.xml
+              subPath: conf/server.xml
+            - name: data-volume
+              mountPath: /opt/liferay/data
+            - name: deploy-volume
+              mountPath: /opt/liferay/deploy
+            - name: certs-volume
+              mountPath: /opt/certs
+              readOnly: true
+
+            - name: osgi-modules-volume
+              mountPath: /opt/liferay/osgi/modules
+            - name: logs-volume
+              mountPath: /opt/liferay/logs
+
+
+      volumes:
+        - name: config-volume
+          configMap:
+            name: liferay-config
+        - name: local-tomcat-volume
+          hostPath:
+            path: /home/st17102301/Projects/training/Kubernetes/yml/Liferay-k8s/Liferay/tomcat
+            type: Directory
+        - name: tomcat-config-volume
+          emptyDir: {}
+        - name: data-volume
+          persistentVolumeClaim:
+            claimName: liferay-data-pvc
+        - name: deploy-volume
+          persistentVolumeClaim:
+            claimName: liferay-deploy-pvc
+        - name: certs-volume
+          secret:
+            secretName: liferay-tls
+
+
+
+        - name: osgi-modules-volume
+          persistentVolumeClaim:
+            claimName: liferay-osgi-modules-pvc
+        - name: logs-volume
+          persistentVolumeClaim:
+            claimName: liferay-logs-pvc

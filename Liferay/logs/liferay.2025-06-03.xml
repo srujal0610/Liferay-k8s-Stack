@@ -1,0 +1,875 @@
+<log4j:event logger="com.liferay.portal.spring.context.PortalContextLoaderListener" timestamp="1748954610035" level="INFO" thread="main">
+<log4j:message><![CDATA[JVM arguments: -Djava.util.logging.config.file=/opt/liferay/tomcat/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dfile.encoding=UTF-8 -Djava.locale.providers=JRE,COMPAT,CLDR -Djava.net.preferIPv4Stack=true -Duser.timezone=GMT -Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7 -Dignore.endorsed.dirs= -Dcatalina.base=/opt/liferay/tomcat -Dcatalina.home=/opt/liferay/tomcat -Djava.io.tmpdir=/opt/liferay/tomcat/temp]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.log.LogWrapper" method="info" file="LogWrapper.java" line="123"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.spring.hibernate.DialectDetector" timestamp="1748954623620" level="INFO" thread="main">
+<log4j:message><![CDATA[Using dialect org.hibernate.dialect.MySQL8Dialect for MySQL 8.0]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.spring.hibernate.DialectDetector" method="getDialect" file="DialectDetector.java" line="153"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.dao.init.DBInitUtil" timestamp="1748954623706" level="INFO" thread="main">
+<log4j:message><![CDATA[Create tables and populate with default data]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.dao.init.DBInitUtil" method="_createTablesAndPopulate" file="DBInitUtil.java" line="141"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1748954644471" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting initial bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_setUpInitialBundles" file="ModuleFrameworkImpl.java" line="1238"/>
+</log4j:event>
+
+<log4j:event logger="org.apache.felix.configadmin.plugin.interpolation.InterpolationConfigurationPlugin" timestamp="1748954646705" level="INFO" thread="ModuleFramework-Static-Bundles-3">
+<log4j:message><![CDATA[Configured directory for secrets: /opt/liferay/osgi/configs]]></log4j:message>
+<log4j:locationInfo class="org.apache.felix.configadmin.plugin.interpolation.InterpolationConfigurationPlugin" method="&lt;init&gt;" file="InterpolationConfigurationPlugin.java" line="109"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1748954650246" level="INFO" thread="main">
+<log4j:message><![CDATA[Started initial bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_setUpInitialBundles" file="ModuleFrameworkImpl.java" line="1535"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1748954650247" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting dynamic bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_startDynamicBundles" file="ModuleFrameworkImpl.java" line="1584"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1748954672466" level="INFO" thread="main">
+<log4j:message><![CDATA[Started dynamic bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_startDynamicBundles" file="ModuleFrameworkImpl.java" line="1606"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1748954672467" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting web bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_startDynamicBundles" file="ModuleFrameworkImpl.java" line="1613"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1748954676669" level="INFO" thread="main">
+<log4j:message><![CDATA[Started web bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_startDynamicBundles" file="ModuleFrameworkImpl.java" line="1667"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1748954676670" level="INFO" thread="main">
+<log4j:message><![CDATA[Navigate to Control Panel > System > Gogo Shell and enter "lb" to see all bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="startFramework" file="ModuleFrameworkImpl.java" line="253"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.search.elasticsearch7.internal.sidecar.SidecarManager" timestamp="1748954680335" level="WARN" thread="main">
+<log4j:message><![CDATA[Liferay automatically starts a child process of Elasticsearch named sidecar for convenient development and demonstration purposes. Do NOT use sidecar in production. Refer to the documentation for details on the limitations of sidecar and instructions on configuring a remote Elasticsearch connection in the Control Panel.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.search.elasticsearch7.internal.sidecar.SidecarManager" method="applyConfigurations" file="SidecarManager.java" line="103"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.search.elasticsearch7.internal.sidecar.Sidecar" timestamp="1748954700442" level="INFO" thread="main">
+<log4j:message><![CDATA[Sidecar Elasticsearch liferay started at 127.0.0.1:9201]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.search.elasticsearch7.internal.sidecar.Sidecar" method="start" file="Sidecar.java" line="119"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.events.StartupHelperUtil" timestamp="1748954709743" level="INFO" thread="main">
+<log4j:message><![CDATA[There are no patches installed]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.events.StartupHelperUtil" method="printPatchLevel" file="StartupHelperUtil.java" line="81"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954710561" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting com.liferay.portal.events.StartupHelperUtil#initResourceActions]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="&lt;init&gt;" file="LoggingTimer.java" line="83"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954710894" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed com.liferay.portal.events.StartupHelperUtil#initResourceActions in 333 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="close" file="LoggingTimer.java" line="44"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.VerifyProcess" timestamp="1748954710911" level="INFO" thread="main">
+<log4j:message><![CDATA[Verifying com.liferay.portal.verify.VerifyProperties]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.VerifyProcess" method="lambda$verify$0" file="VerifyProcess.java" line="76"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954710912" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting com.liferay.portal.verify.VerifyProperties#verifySystemProperties]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="&lt;init&gt;" file="LoggingTimer.java" line="83"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954710913" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed com.liferay.portal.verify.VerifyProperties#verifySystemProperties in 1 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="close" file="LoggingTimer.java" line="44"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954710914" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting com.liferay.portal.verify.VerifyProperties#verifyPortalProperties]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="&lt;init&gt;" file="LoggingTimer.java" line="83"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954710932" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed com.liferay.portal.verify.VerifyProperties#verifyPortalProperties in 18 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="close" file="LoggingTimer.java" line="44"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954710933" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting com.liferay.portal.verify.VerifyProperties#verifyDocumentLibrary]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="&lt;init&gt;" file="LoggingTimer.java" line="83"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954710933" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed com.liferay.portal.verify.VerifyProperties#verifyDocumentLibrary in 1 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="close" file="LoggingTimer.java" line="44"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.VerifyProcess" timestamp="1748954710934" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed verification process com.liferay.portal.verify.VerifyProperties in 25 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.VerifyProcess" method="verify" file="VerifyProcess.java" line="89"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.VerifyProcess" timestamp="1748954710937" level="INFO" thread="main">
+<log4j:message><![CDATA[Verifying com.liferay.portal.verify.VerifyGroup]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.VerifyProcess" method="lambda$verify$0" file="VerifyProcess.java" line="76"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954710938" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting com.liferay.portal.verify.VerifyGroup#verifyStagedGroups]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="&lt;init&gt;" file="LoggingTimer.java" line="83"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954711117" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed com.liferay.portal.verify.VerifyGroup#verifyStagedGroups in 179 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="close" file="LoggingTimer.java" line="44"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.VerifyProcess" timestamp="1748954711118" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed verification process com.liferay.portal.verify.VerifyGroup in 181 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.VerifyProcess" method="verify" file="VerifyProcess.java" line="89"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.VerifyProcess" timestamp="1748954711121" level="INFO" thread="main">
+<log4j:message><![CDATA[Verifying com.liferay.portal.verify.VerifyResourcePermissions]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.VerifyProcess" method="lambda$verify$0" file="VerifyProcess.java" line="76"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.VerifyProcess" timestamp="1748954711136" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed verification process com.liferay.portal.verify.VerifyResourcePermissions in 15 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.VerifyProcess" method="verify" file="VerifyProcess.java" line="89"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.AutoDeployDir" timestamp="1748954712175" level="INFO" thread="main">
+<log4j:message><![CDATA[Auto deploy scanner started for /opt/liferay/deploy]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.AutoDeployDir" method="start" file="AutoDeployDir.java" line="176"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.mail.messaging.MailMessageListener" timestamp="1748954715745" level="WARN" thread="liferay/mail-3">
+<log4j:message><![CDATA[Email test@domain.invalid will be ignored because it is included in mail.send.blacklist]]></log4j:message>
+<log4j:locationInfo class="com.liferay.mail.messaging.MailMessageListener" method="filterInternetAddress" file="MailMessageListener.java" line="140"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.mail.messaging.MailMessageListener" timestamp="1748954715746" level="WARN" thread="liferay/mail-3">
+<log4j:message><![CDATA[Skipping email because the sender is not specified]]></log4j:message>
+<log4j:locationInfo class="com.liferay.mail.messaging.MailMessageListener" method="doMailMessage" file="MailMessageListener.java" line="53"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954727505" level="INFO" thread="main">
+<log4j:message><![CDATA[Upgrading com.liferay.portal.configuration.persistence.internal.upgrade.v1_0_0.UpgradeConfigurationPid]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="lambda$upgrade$0" file="UpgradeProcess.java" line="97"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954727563" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed upgrade process com.liferay.portal.configuration.persistence.internal.upgrade.v1_0_0.UpgradeConfigurationPid in 59 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="upgrade" file="UpgradeProcess.java" line="112"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954727966" level="INFO" thread="main">
+<log4j:message><![CDATA[Upgrading com.liferay.portal.security.sso.token.internal.upgrade.v2_0_0.TokenConfigurationUpgradeProcess]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="lambda$upgrade$0" file="UpgradeProcess.java" line="97"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954727981" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed upgrade process com.liferay.portal.security.sso.token.internal.upgrade.v2_0_0.TokenConfigurationUpgradeProcess in 16 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="upgrade" file="UpgradeProcess.java" line="112"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954728276" level="INFO" thread="main">
+<log4j:message><![CDATA[Upgrading com.liferay.portal.security.audit.storage.internal.upgrade.AuditStorageServiceUpgrade$1]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="lambda$upgrade$0" file="UpgradeProcess.java" line="97"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954728280" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed upgrade process com.liferay.portal.security.audit.storage.internal.upgrade.AuditStorageServiceUpgrade$1 in 4 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="upgrade" file="UpgradeProcess.java" line="112"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954730577" level="INFO" thread="main">
+<log4j:message><![CDATA[Upgrading com.liferay.analytics.settings.web.internal.upgrade.v1_0_0.AnalyticsConfigurationPreferencesUpgradeProcess]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="lambda$upgrade$0" file="UpgradeProcess.java" line="97"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954730579" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed upgrade process com.liferay.analytics.settings.web.internal.upgrade.v1_0_0.AnalyticsConfigurationPreferencesUpgradeProcess in 2 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="upgrade" file="UpgradeProcess.java" line="112"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954730598" level="INFO" thread="main">
+<log4j:message><![CDATA[Upgrading com.liferay.analytics.settings.web.internal.upgrade.v1_0_1.AnalyticsConfigurationPreferencesUpgradeProcess]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="lambda$upgrade$0" file="UpgradeProcess.java" line="97"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954730599" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed upgrade process com.liferay.analytics.settings.web.internal.upgrade.v1_0_1.AnalyticsConfigurationPreferencesUpgradeProcess in 2 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="upgrade" file="UpgradeProcess.java" line="112"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954730802" level="INFO" thread="main">
+<log4j:message><![CDATA[Upgrading com.liferay.portal.security.ldap.internal.upgrade.v1_0_0.LDAPSystemConfigurationsUpgradeProcess]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="lambda$upgrade$0" file="UpgradeProcess.java" line="97"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954730804" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed upgrade process com.liferay.portal.security.ldap.internal.upgrade.v1_0_0.LDAPSystemConfigurationsUpgradeProcess in 2 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="upgrade" file="UpgradeProcess.java" line="112"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954731075" level="INFO" thread="main">
+<log4j:message><![CDATA[Upgrading com.liferay.dynamic.data.mapping.form.web.internal.upgrade.v1_0_0.UpgradeDDMFormAdminPortletId]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="lambda$upgrade$0" file="UpgradeProcess.java" line="97"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954731077" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting com.liferay.portal.kernel.upgrade.BasePortletIdUpgradeProcess#upgradeInstanceablePortletIds]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="&lt;init&gt;" file="LoggingTimer.java" line="83"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954731108" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed com.liferay.portal.kernel.upgrade.BasePortletIdUpgradeProcess#upgradeInstanceablePortletIds in 31 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="close" file="LoggingTimer.java" line="44"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954731109" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting com.liferay.portal.kernel.upgrade.BasePortletIdUpgradeProcess#upgradeUninstanceablePortletIds]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="&lt;init&gt;" file="LoggingTimer.java" line="83"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954731110" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed com.liferay.portal.kernel.upgrade.BasePortletIdUpgradeProcess#upgradeUninstanceablePortletIds in 1 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="close" file="LoggingTimer.java" line="44"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954731111" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed upgrade process com.liferay.dynamic.data.mapping.form.web.internal.upgrade.v1_0_0.UpgradeDDMFormAdminPortletId in 36 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="upgrade" file="UpgradeProcess.java" line="112"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954731130" level="INFO" thread="main">
+<log4j:message><![CDATA[Upgrading com.liferay.dynamic.data.mapping.form.web.internal.upgrade.v1_0_0.UpgradeDDMFormPortletId]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="lambda$upgrade$0" file="UpgradeProcess.java" line="97"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954731132" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting com.liferay.portal.kernel.upgrade.BasePortletIdUpgradeProcess#upgradeInstanceablePortletIds]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="&lt;init&gt;" file="LoggingTimer.java" line="83"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954731147" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed com.liferay.portal.kernel.upgrade.BasePortletIdUpgradeProcess#upgradeInstanceablePortletIds in 15 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="close" file="LoggingTimer.java" line="44"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954731149" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting com.liferay.portal.kernel.upgrade.BasePortletIdUpgradeProcess#upgradeUninstanceablePortletIds]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="&lt;init&gt;" file="LoggingTimer.java" line="83"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954731150" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed com.liferay.portal.kernel.upgrade.BasePortletIdUpgradeProcess#upgradeUninstanceablePortletIds in 1 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="close" file="LoggingTimer.java" line="44"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954731150" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed upgrade process com.liferay.dynamic.data.mapping.form.web.internal.upgrade.v1_0_0.UpgradeDDMFormPortletId in 21 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="upgrade" file="UpgradeProcess.java" line="112"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954731160" level="INFO" thread="main">
+<log4j:message><![CDATA[Upgrading com.liferay.dynamic.data.mapping.form.web.internal.upgrade.v1_0_0.UpgradeDDMFormPortletPreferences]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="lambda$upgrade$0" file="UpgradeProcess.java" line="97"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954731161" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting com.liferay.portal.kernel.upgrade.BasePortletPreferencesUpgradeProcess#updatePortletPreferences]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="&lt;init&gt;" file="LoggingTimer.java" line="83"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954731169" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed com.liferay.portal.kernel.upgrade.BasePortletPreferencesUpgradeProcess#updatePortletPreferences in 7 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="close" file="LoggingTimer.java" line="44"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954731170" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed upgrade process com.liferay.dynamic.data.mapping.form.web.internal.upgrade.v1_0_0.UpgradeDDMFormPortletPreferences in 10 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="upgrade" file="UpgradeProcess.java" line="112"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954741198" level="INFO" thread="main">
+<log4j:message><![CDATA[Upgrading com.liferay.client.extension.web.internal.upgrade.ClientExtensionWebUpgrade$1]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="lambda$upgrade$0" file="UpgradeProcess.java" line="97"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954741200" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting com.liferay.portal.kernel.upgrade.BasePortletIdUpgradeProcess#upgradeInstanceablePortletIds]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="&lt;init&gt;" file="LoggingTimer.java" line="83"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954741203" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed com.liferay.portal.kernel.upgrade.BasePortletIdUpgradeProcess#upgradeInstanceablePortletIds in 3 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="close" file="LoggingTimer.java" line="44"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954741205" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting com.liferay.portal.kernel.upgrade.BasePortletIdUpgradeProcess#upgradeUninstanceablePortletIds]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="&lt;init&gt;" file="LoggingTimer.java" line="83"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954741206" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed com.liferay.portal.kernel.upgrade.BasePortletIdUpgradeProcess#upgradeUninstanceablePortletIds in 2 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="close" file="LoggingTimer.java" line="44"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954741208" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed upgrade process com.liferay.client.extension.web.internal.upgrade.ClientExtensionWebUpgrade$1 in 11 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="upgrade" file="UpgradeProcess.java" line="112"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954741248" level="INFO" thread="main">
+<log4j:message><![CDATA[Upgrading com.liferay.client.extension.web.internal.upgrade.ClientExtensionWebUpgrade$2]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="lambda$upgrade$0" file="UpgradeProcess.java" line="97"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954741250" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed upgrade process com.liferay.client.extension.web.internal.upgrade.ClientExtensionWebUpgrade$2 in 2 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="upgrade" file="UpgradeProcess.java" line="112"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954741260" level="INFO" thread="main">
+<log4j:message><![CDATA[Upgrading com.liferay.client.extension.web.internal.upgrade.ClientExtensionWebUpgrade$3]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="lambda$upgrade$0" file="UpgradeProcess.java" line="97"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954741262" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting com.liferay.portal.kernel.upgrade.BasePortletIdUpgradeProcess#upgradeInstanceablePortletIds]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="&lt;init&gt;" file="LoggingTimer.java" line="83"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954741288" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed com.liferay.portal.kernel.upgrade.BasePortletIdUpgradeProcess#upgradeInstanceablePortletIds in 27 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="close" file="LoggingTimer.java" line="44"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954741290" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting com.liferay.portal.kernel.upgrade.BasePortletIdUpgradeProcess#upgradeUninstanceablePortletIds]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="&lt;init&gt;" file="LoggingTimer.java" line="83"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954741291" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed com.liferay.portal.kernel.upgrade.BasePortletIdUpgradeProcess#upgradeUninstanceablePortletIds in 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="close" file="LoggingTimer.java" line="44"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954741292" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed upgrade process com.liferay.client.extension.web.internal.upgrade.ClientExtensionWebUpgrade$3 in 32 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="upgrade" file="UpgradeProcess.java" line="112"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954741326" level="INFO" thread="main">
+<log4j:message><![CDATA[Upgrading com.liferay.client.extension.internal.upgrade.ClientExtensionInitialUpgradeStepRegistrator$1]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="lambda$upgrade$0" file="UpgradeProcess.java" line="97"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954741332" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed upgrade process com.liferay.client.extension.internal.upgrade.ClientExtensionInitialUpgradeStepRegistrator$1 in 6 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="upgrade" file="UpgradeProcess.java" line="112"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954754332" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Upgrading com.liferay.segments.content.targeting.upgrade.internal.v1_0_0.ContentTargetingUpgradeProcess]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="lambda$upgrade$0" file="UpgradeProcess.java" line="97"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954754341" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Completed upgrade process com.liferay.segments.content.targeting.upgrade.internal.v1_0_0.ContentTargetingUpgradeProcess in 8 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="upgrade" file="UpgradeProcess.java" line="112"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954770381" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Upgrading com.liferay.portal.kernel.upgrade.DummyUpgradeProcess]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="lambda$upgrade$0" file="UpgradeProcess.java" line="97"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954770382" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Completed upgrade process com.liferay.portal.kernel.upgrade.DummyUpgradeProcess in 1 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="upgrade" file="UpgradeProcess.java" line="112"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.VerifyProcess" timestamp="1748954781743" level="INFO" thread="main">
+<log4j:message><![CDATA[Verifying com.liferay.portal.scheduler.internal.verify.SchedulerHelperPropertiesVerifyProcess]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.VerifyProcess" method="lambda$verify$0" file="VerifyProcess.java" line="76"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954781746" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting com.liferay.portal.scheduler.internal.verify.SchedulerHelperPropertiesVerifyProcess#_upgradeConfiguration]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="&lt;init&gt;" file="LoggingTimer.java" line="83"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954781747" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed com.liferay.portal.scheduler.internal.verify.SchedulerHelperPropertiesVerifyProcess#_upgradeConfiguration in 1 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="close" file="LoggingTimer.java" line="44"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.VerifyProcess" timestamp="1748954781748" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed verification process com.liferay.portal.scheduler.internal.verify.SchedulerHelperPropertiesVerifyProcess in 5 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.VerifyProcess" method="verify" file="VerifyProcess.java" line="89"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.VerifyProcess" timestamp="1748954781761" level="INFO" thread="main">
+<log4j:message><![CDATA[Verifying com.liferay.portal.security.sso.opensso.internal.verify.OpenSSOCompanySettingsVerifyProcess]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.VerifyProcess" method="lambda$verify$0" file="VerifyProcess.java" line="76"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954781763" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting com.liferay.portal.verify.BaseCompanySettingsVerifyProcess#verifyProperties]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="&lt;init&gt;" file="LoggingTimer.java" line="83"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.BaseCompanySettingsVerifyProcess" timestamp="1748954781768" level="INFO" thread="main">
+<log4j:message><![CDATA[Removing preference keys [open.sso.last.name.attr, open.sso.auth.enabled, open.sso.ldap.import.enabled, open.sso.email.address.attr, open.sso.service.url, open.sso.first.name.attr, open.sso.login.url, open.sso.logout.url, open.sso.screen.name.attr, open.sso.logout.on.session.expiration] for company 20099]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.BaseCompanySettingsVerifyProcess" method="lambda$verifyProperties$0" file="BaseCompanySettingsVerifyProcess.java" line="124"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954781774" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed com.liferay.portal.verify.BaseCompanySettingsVerifyProcess#verifyProperties in 11 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="close" file="LoggingTimer.java" line="44"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.VerifyProcess" timestamp="1748954781775" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed verification process com.liferay.portal.security.sso.opensso.internal.verify.OpenSSOCompanySettingsVerifyProcess in 14 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.VerifyProcess" method="verify" file="VerifyProcess.java" line="89"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.VerifyProcess" timestamp="1748954781786" level="INFO" thread="main">
+<log4j:message><![CDATA[Verifying com.liferay.portal.security.sso.facebook.connect.internal.verify.FacebookConnectCompanySettingsVerifyProcess]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.VerifyProcess" method="lambda$verify$0" file="VerifyProcess.java" line="76"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954781787" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting com.liferay.portal.verify.BaseCompanySettingsVerifyProcess#verifyProperties]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="&lt;init&gt;" file="LoggingTimer.java" line="83"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.BaseCompanySettingsVerifyProcess" timestamp="1748954781793" level="INFO" thread="main">
+<log4j:message><![CDATA[Removing preference keys [facebook.connect.app.secret, facebook.connect.graph.url, facebook.connect.oauth.auth.url, facebook.connect.app.id, facebook.connect.oauth.redirect.url, facebook.connect.oauth.token.url, facebook.auth.enabled, facebook.connect.verified.account.required] for company 20099]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.BaseCompanySettingsVerifyProcess" method="lambda$verifyProperties$0" file="BaseCompanySettingsVerifyProcess.java" line="124"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954781794" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed com.liferay.portal.verify.BaseCompanySettingsVerifyProcess#verifyProperties in 6 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="close" file="LoggingTimer.java" line="44"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.VerifyProcess" timestamp="1748954781795" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed verification process com.liferay.portal.security.sso.facebook.connect.internal.verify.FacebookConnectCompanySettingsVerifyProcess in 9 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.VerifyProcess" method="verify" file="VerifyProcess.java" line="89"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.VerifyProcess" timestamp="1748954781806" level="INFO" thread="main">
+<log4j:message><![CDATA[Verifying com.liferay.exportimport.internal.verify.system.event.SystemEventVerifyProcess]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.VerifyProcess" method="lambda$verify$0" file="VerifyProcess.java" line="76"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.VerifyProcess" timestamp="1748954781820" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed verification process com.liferay.exportimport.internal.verify.system.event.SystemEventVerifyProcess in 14 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.VerifyProcess" method="verify" file="VerifyProcess.java" line="89"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.VerifyProcess" timestamp="1748954781831" level="INFO" thread="main">
+<log4j:message><![CDATA[Verifying com.liferay.portal.security.ldap.internal.verify.LDAPPropertiesVerifyProcess]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.VerifyProcess" method="lambda$verify$0" file="VerifyProcess.java" line="76"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954781833" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting com.liferay.portal.security.ldap.internal.verify.LDAPPropertiesVerifyProcess#_verifyLDAPProperties]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="&lt;init&gt;" file="LoggingTimer.java" line="83"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954781836" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed com.liferay.portal.security.ldap.internal.verify.LDAPPropertiesVerifyProcess#_verifyLDAPProperties in 4 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="close" file="LoggingTimer.java" line="44"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.VerifyProcess" timestamp="1748954781837" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed verification process com.liferay.portal.security.ldap.internal.verify.LDAPPropertiesVerifyProcess in 7 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.VerifyProcess" method="verify" file="VerifyProcess.java" line="89"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.VerifyProcess" timestamp="1748954781853" level="INFO" thread="main">
+<log4j:message><![CDATA[Verifying com.liferay.portal.security.service.access.policy.internal.verify.SAPServiceVerifyProcess]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.VerifyProcess" method="lambda$verify$0" file="VerifyProcess.java" line="76"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954781855" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting com.liferay.portal.security.service.access.policy.internal.verify.SAPServiceVerifyProcess#_verifyDefaultSAPEntry]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="&lt;init&gt;" file="LoggingTimer.java" line="83"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954781925" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed com.liferay.portal.security.service.access.policy.internal.verify.SAPServiceVerifyProcess#_verifyDefaultSAPEntry in 70 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="close" file="LoggingTimer.java" line="44"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.VerifyProcess" timestamp="1748954781926" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed verification process com.liferay.portal.security.service.access.policy.internal.verify.SAPServiceVerifyProcess in 76 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.VerifyProcess" method="verify" file="VerifyProcess.java" line="89"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.VerifyProcess" timestamp="1748954781940" level="INFO" thread="main">
+<log4j:message><![CDATA[Verifying com.liferay.message.boards.internal.verify.MessageBoardsServiceVerifyProcess]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.VerifyProcess" method="lambda$verify$0" file="VerifyProcess.java" line="76"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954781942" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting com.liferay.message.boards.internal.verify.MessageBoardsServiceVerifyProcess#_verifyGroupedModels]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="&lt;init&gt;" file="LoggingTimer.java" line="83"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954781986" level="INFO" thread="ForkJoinPool-1-worker-1">
+<log4j:message><![CDATA[Starting com.liferay.portal.verify.VerifyGroupedModel#verifyGroupedModel#MBDiscussion]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="&lt;init&gt;" file="LoggingTimer.java" line="83"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954781988" level="INFO" thread="ForkJoinPool-1-worker-2">
+<log4j:message><![CDATA[Starting com.liferay.portal.verify.VerifyGroupedModel#verifyGroupedModel#MBThreadFlag]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="&lt;init&gt;" file="LoggingTimer.java" line="83"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954781988" level="INFO" thread="ForkJoinPool-1-worker-1">
+<log4j:message><![CDATA[Completed com.liferay.portal.verify.VerifyGroupedModel#verifyGroupedModel#MBDiscussion in 3 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="close" file="LoggingTimer.java" line="44"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954781989" level="INFO" thread="ForkJoinPool-1-worker-2">
+<log4j:message><![CDATA[Completed com.liferay.portal.verify.VerifyGroupedModel#verifyGroupedModel#MBThreadFlag in 2 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="close" file="LoggingTimer.java" line="44"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954781993" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed com.liferay.message.boards.internal.verify.MessageBoardsServiceVerifyProcess#_verifyGroupedModels in 50 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="close" file="LoggingTimer.java" line="44"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.VerifyProcess" timestamp="1748954781994" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed verification process com.liferay.message.boards.internal.verify.MessageBoardsServiceVerifyProcess in 54 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.VerifyProcess" method="verify" file="VerifyProcess.java" line="89"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.osgi.debug.internal.osgi.commands.SystemCheckOSGiCommands" timestamp="1748954796156" level="INFO" thread="main">
+<log4j:message><![CDATA[System check is enabled. You can run a system check with the command "system:check" in Gogo shell.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.osgi.debug.internal.osgi.commands.SystemCheckOSGiCommands" method="activate" file="SystemCheckOSGiCommands.java" line="59"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.deploy.hot.ThemeHotDeployListener" timestamp="1748954802278" level="INFO" thread="com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener">
+<log4j:message><![CDATA[1 theme for dialect-theme is available for use]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.deploy.hot.ThemeHotDeployListener" method="doInvokeDeploy" file="ThemeHotDeployListener.java" line="108"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.deploy.hot.ThemeHotDeployListener" timestamp="1748954802780" level="INFO" thread="com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener">
+<log4j:message><![CDATA[1 theme for minium-theme is available for use]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.deploy.hot.ThemeHotDeployListener" method="doInvokeDeploy" file="ThemeHotDeployListener.java" line="108"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.deploy.hot.ThemeHotDeployListener" timestamp="1748954803109" level="INFO" thread="com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener">
+<log4j:message><![CDATA[1 theme for admin-theme is available for use]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.deploy.hot.ThemeHotDeployListener" method="doInvokeDeploy" file="ThemeHotDeployListener.java" line="108"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.deploy.hot.ThemeHotDeployListener" timestamp="1748954803331" level="INFO" thread="com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener">
+<log4j:message><![CDATA[1 theme for classic-theme is available for use]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.deploy.hot.ThemeHotDeployListener" method="doInvokeDeploy" file="ThemeHotDeployListener.java" line="108"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.deploy.hot.ThemeHotDeployListener" timestamp="1748954803551" level="INFO" thread="com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener">
+<log4j:message><![CDATA[1 theme for speedwell-theme is available for use]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.deploy.hot.ThemeHotDeployListener" method="doInvokeDeploy" file="ThemeHotDeployListener.java" line="108"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.VerifyProcess" timestamp="1748954803759" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Verifying com.liferay.commerce.account.internal.verify.CommerceAccountServiceVerifyProcess]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.VerifyProcess" method="lambda$verify$0" file="VerifyProcess.java" line="76"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954803760" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Starting com.liferay.commerce.account.internal.verify.CommerceAccountServiceVerifyProcess#_verifyAccountRoles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="&lt;init&gt;" file="LoggingTimer.java" line="83"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954805185" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Completed com.liferay.commerce.account.internal.verify.CommerceAccountServiceVerifyProcess#_verifyAccountRoles in 1425 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="close" file="LoggingTimer.java" line="44"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954805189" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Starting com.liferay.commerce.account.internal.verify.CommerceAccountServiceVerifyProcess#_verifyAccountGroup]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="&lt;init&gt;" file="LoggingTimer.java" line="83"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954805192" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Completed com.liferay.commerce.account.internal.verify.CommerceAccountServiceVerifyProcess#_verifyAccountGroup in 3 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="close" file="LoggingTimer.java" line="44"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.VerifyProcess" timestamp="1748954805192" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Completed verification process com.liferay.commerce.account.internal.verify.CommerceAccountServiceVerifyProcess in 1433 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.VerifyProcess" method="verify" file="VerifyProcess.java" line="89"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.VerifyProcess" timestamp="1748954816844" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Verifying com.liferay.document.library.internal.verify.DLServiceVerifyProcess]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.VerifyProcess" method="lambda$verify$0" file="VerifyProcess.java" line="76"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954816848" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Starting com.liferay.document.library.internal.verify.DLServiceVerifyProcess#_checkDLFileEntryMetadata]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="&lt;init&gt;" file="LoggingTimer.java" line="83"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954816871" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Completed com.liferay.document.library.internal.verify.DLServiceVerifyProcess#_checkDLFileEntryMetadata in 18 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="close" file="LoggingTimer.java" line="44"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954816878" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Starting com.liferay.document.library.internal.verify.DLServiceVerifyProcess#_checkMimeTypes]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="&lt;init&gt;" file="LoggingTimer.java" line="83"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954816910" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Completed com.liferay.document.library.internal.verify.DLServiceVerifyProcess#_checkMimeTypes in 32 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="close" file="LoggingTimer.java" line="44"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954816912" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Starting com.liferay.document.library.internal.verify.DLServiceVerifyProcess#_updateClassNameId]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="&lt;init&gt;" file="LoggingTimer.java" line="83"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954816926" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Completed com.liferay.document.library.internal.verify.DLServiceVerifyProcess#_updateClassNameId in 14 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="close" file="LoggingTimer.java" line="44"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954816929" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Starting com.liferay.document.library.internal.verify.DLServiceVerifyProcess#_updateFileEntryAssets]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="&lt;init&gt;" file="LoggingTimer.java" line="83"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954816947" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Completed com.liferay.document.library.internal.verify.DLServiceVerifyProcess#_updateFileEntryAssets in 17 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="close" file="LoggingTimer.java" line="44"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954816949" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Starting com.liferay.document.library.internal.verify.DLServiceVerifyProcess#_updateFolderAssets]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="&lt;init&gt;" file="LoggingTimer.java" line="83"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954817310" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Completed com.liferay.document.library.internal.verify.DLServiceVerifyProcess#_updateFolderAssets in 361 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="close" file="LoggingTimer.java" line="44"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.VerifyProcess" timestamp="1748954817311" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Completed verification process com.liferay.document.library.internal.verify.DLServiceVerifyProcess in 467 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.VerifyProcess" method="verify" file="VerifyProcess.java" line="89"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954822726" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Upgrading com.liferay.message.boards.moderation.internal.upgrade.v1_0_0.MBModerationWorkflowDefinitionUpgradeProcess]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="lambda$upgrade$0" file="UpgradeProcess.java" line="97"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954822821" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Completed upgrade process com.liferay.message.boards.moderation.internal.upgrade.v1_0_0.MBModerationWorkflowDefinitionUpgradeProcess in 95 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="upgrade" file="UpgradeProcess.java" line="112"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.VerifyProcess" timestamp="1748954841272" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Verifying com.liferay.commerce.price.list.internal.verify.CommercePriceListServiceVerifyProcess]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.VerifyProcess" method="lambda$verify$0" file="VerifyProcess.java" line="76"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954841274" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Starting com.liferay.commerce.price.list.internal.verify.CommercePriceListServiceVerifyProcess#_verifyBasePriceLists]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="&lt;init&gt;" file="LoggingTimer.java" line="83"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954841544" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Completed com.liferay.commerce.price.list.internal.verify.CommercePriceListServiceVerifyProcess#_verifyBasePriceLists in 270 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="close" file="LoggingTimer.java" line="44"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.VerifyProcess" timestamp="1748954841546" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Completed verification process com.liferay.commerce.price.list.internal.verify.CommercePriceListServiceVerifyProcess in 274 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.VerifyProcess" method="verify" file="VerifyProcess.java" line="89"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.VerifyProcess" timestamp="1748954845219" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Verifying com.liferay.commerce.product.internal.verify.CommerceProductServiceVerifyProcess]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.VerifyProcess" method="lambda$verify$0" file="VerifyProcess.java" line="76"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954845221" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Starting com.liferay.commerce.product.internal.verify.CommerceProductServiceVerifyProcess#_verifyCPMeasurementUnits]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="&lt;init&gt;" file="LoggingTimer.java" line="83"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954845308" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Completed com.liferay.commerce.product.internal.verify.CommerceProductServiceVerifyProcess#_verifyCPMeasurementUnits in 87 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="close" file="LoggingTimer.java" line="44"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.VerifyProcess" timestamp="1748954845309" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Completed verification process com.liferay.commerce.product.internal.verify.CommerceProductServiceVerifyProcess in 91 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.VerifyProcess" method="verify" file="VerifyProcess.java" line="89"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.VerifyProcess" timestamp="1748954848366" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Verifying com.liferay.dynamic.data.mapping.verify.DDMServiceVerifyProcess]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.VerifyProcess" method="lambda$verify$0" file="VerifyProcess.java" line="76"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954848368" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Starting com.liferay.dynamic.data.mapping.verify.DDMServiceVerifyProcess#verifyStructureLinks]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="&lt;init&gt;" file="LoggingTimer.java" line="83"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954848371" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Completed com.liferay.dynamic.data.mapping.verify.DDMServiceVerifyProcess#verifyStructureLinks in 3 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="close" file="LoggingTimer.java" line="44"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954848372" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Starting com.liferay.dynamic.data.mapping.verify.DDMServiceVerifyProcess#verifyTemplateLinks]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="&lt;init&gt;" file="LoggingTimer.java" line="83"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954848375" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Completed com.liferay.dynamic.data.mapping.verify.DDMServiceVerifyProcess#verifyTemplateLinks in 2 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="close" file="LoggingTimer.java" line="44"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.VerifyProcess" timestamp="1748954848376" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Completed verification process com.liferay.dynamic.data.mapping.verify.DDMServiceVerifyProcess in 9 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.VerifyProcess" method="verify" file="VerifyProcess.java" line="89"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954848884" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Upgrading com.liferay.image.upgrade.ImageCompanyIdUpgradeProcess]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="lambda$upgrade$0" file="UpgradeProcess.java" line="97"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954848899" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Completed upgrade process com.liferay.image.upgrade.ImageCompanyIdUpgradeProcess in 15 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="upgrade" file="UpgradeProcess.java" line="112"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954848911" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Upgrading com.liferay.image.upgrade.ImageCompanyIdUpgradeProcess]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="lambda$upgrade$0" file="UpgradeProcess.java" line="97"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954848947" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Completed upgrade process com.liferay.image.upgrade.ImageCompanyIdUpgradeProcess in 36 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="upgrade" file="UpgradeProcess.java" line="112"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954848955" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Upgrading com.liferay.image.upgrade.ImageCompanyIdUpgradeProcess]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="lambda$upgrade$0" file="UpgradeProcess.java" line="97"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954848964" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Completed upgrade process com.liferay.image.upgrade.ImageCompanyIdUpgradeProcess in 10 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="upgrade" file="UpgradeProcess.java" line="112"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954848971" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Upgrading com.liferay.image.upgrade.ImageCompanyIdUpgradeProcess]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="lambda$upgrade$0" file="UpgradeProcess.java" line="97"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954848985" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Completed upgrade process com.liferay.image.upgrade.ImageCompanyIdUpgradeProcess in 14 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="upgrade" file="UpgradeProcess.java" line="112"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954848991" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Upgrading com.liferay.image.upgrade.ImageCompanyIdUpgradeProcess]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="lambda$upgrade$0" file="UpgradeProcess.java" line="97"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954849003" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Completed upgrade process com.liferay.image.upgrade.ImageCompanyIdUpgradeProcess in 12 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="upgrade" file="UpgradeProcess.java" line="112"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954849011" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Upgrading com.liferay.image.upgrade.ImageCompanyIdUpgradeProcess]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="lambda$upgrade$0" file="UpgradeProcess.java" line="97"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954849013" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Completed upgrade process com.liferay.image.upgrade.ImageCompanyIdUpgradeProcess in 3 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="upgrade" file="UpgradeProcess.java" line="112"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954849020" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Upgrading com.liferay.image.internal.upgrade.v1_0_0.ImageStorageUpgradeProcess]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="lambda$upgrade$0" file="UpgradeProcess.java" line="97"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954849026" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Completed upgrade process com.liferay.image.internal.upgrade.v1_0_0.ImageStorageUpgradeProcess in 6 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="upgrade" file="UpgradeProcess.java" line="112"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954857138" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Upgrading com.liferay.image.upgrade.ImageCompanyIdUpgradeProcess]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="lambda$upgrade$0" file="UpgradeProcess.java" line="97"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954857147" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Completed upgrade process com.liferay.image.upgrade.ImageCompanyIdUpgradeProcess in 9 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="upgrade" file="UpgradeProcess.java" line="112"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954857158" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Upgrading com.liferay.image.upgrade.ImageCompanyIdUpgradeProcess]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="lambda$upgrade$0" file="UpgradeProcess.java" line="97"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954857165" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Completed upgrade process com.liferay.image.upgrade.ImageCompanyIdUpgradeProcess in 7 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="upgrade" file="UpgradeProcess.java" line="112"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954858297" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Upgrading com.liferay.adaptive.media.document.library.thumbnails.internal.upgrade.v1_0_0.DocumentLibraryThumbnailsConfigurationUpgradeProcess]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="lambda$upgrade$0" file="UpgradeProcess.java" line="97"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954858298" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Starting com.liferay.adaptive.media.document.library.thumbnails.internal.upgrade.v1_0_0.DocumentLibraryThumbnailsConfigurationUpgradeProcess#doUpgrade]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="&lt;init&gt;" file="LoggingTimer.java" line="83"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1748954858359" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Completed com.liferay.adaptive.media.document.library.thumbnails.internal.upgrade.v1_0_0.DocumentLibraryThumbnailsConfigurationUpgradeProcess#doUpgrade in 60 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="close" file="LoggingTimer.java" line="44"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.upgrade.UpgradeProcess" timestamp="1748954858360" level="INFO" thread="Portal Dependency Manager Component Executor--1">
+<log4j:message><![CDATA[Completed upgrade process com.liferay.adaptive.media.document.library.thumbnails.internal.upgrade.v1_0_0.DocumentLibraryThumbnailsConfigurationUpgradeProcess in 64 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.upgrade.UpgradeProcess" method="upgrade" file="UpgradeProcess.java" line="112"/>
+</log4j:event>
+

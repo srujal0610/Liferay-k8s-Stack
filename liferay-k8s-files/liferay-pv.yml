@@ -1,0 +1,85 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: liferay-pv-data
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: local-storage
+  local:
+    path: /home/st17102301/Projects/training/Kubernetes/yml/Liferay-k8s/Liferay/data
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - matchExpressions:
+            - key: kubernetes.io/hostname
+              operator: In
+              values:
+                - st17102301
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: liferay-pv-deploy
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: local-storage
+  local:
+    path: /home/st17102301/Projects/training/Kubernetes/yml/Liferay-k8s/Liferay/osgi
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - matchExpressions:
+            - key: kubernetes.io/hostname
+              operator: In
+              values:
+                - st17102301
+
+
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: liferay-pv-osgi-modules
+spec:
+  capacity:
+    storage: 512Mi
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: local-storage
+  local:
+    path: /home/st17102301/Projects/training/Kubernetes/yml/Liferay-k8s/Liferay/osgi/modules
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - matchExpressions:
+            - key: kubernetes.io/hostname
+              operator: In
+              values:
+                - st17102301
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: liferay-pv-logs
+spec:
+  capacity:
+    storage: 512Mi
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: local-storage
+  local:
+    path: /home/st17102301/Projects/training/Kubernetes/yml/Liferay-k8s/Liferay/logs
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - matchExpressions:
+            - key: kubernetes.io/hostname
+              operator: In
+              values:
+                - st17102301
